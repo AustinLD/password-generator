@@ -31,7 +31,7 @@ const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
     if (upCase); {
       randomizedArr = randomizedArr.concat(uppercase);
     }
-    if (upCase); {
+    if (lowCase); {
       randomizedArr = randomizedArr.concat(lowercase);
     }
     // if they choose nothing this will reprompt them
