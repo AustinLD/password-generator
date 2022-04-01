@@ -22,7 +22,7 @@ const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
     var numbers = confirm("Would you like numbers?")
     var upCase = confirm("Would you like uppercase letters?")
     var lowCase = confirm("Would you like lowercase letters?")
-    if (specials) {
+    if (specials) { // if (true) checks user input, if true, concats the arrays and stores it in randomized array
       randomizedArr = randomizedArr.concat(specialChars);
     }
     if (numbers); {
@@ -34,7 +34,7 @@ const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
     if (upCase); {
       randomizedArr = randomizedArr.concat(lowercase);
     }
-    
+    // if they choose nothing this will reprompt them
     if (!specials && !numbers && !upCase && !lowCase) {
         alert("Must select at least one character type");
         return null;
@@ -46,8 +46,8 @@ const lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
       word += randomizedArr[Math.floor(Math.random() * randomizedArr.length)];
       
     }
-    console.log(word);
-    //else???? ask again?????
+    
+    // final output for generatePassword()
     return word
 
 
